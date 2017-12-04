@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.tmp
+images
+build/dev/img/**
+build/prod/img/**
+src/img/**
+notes.md

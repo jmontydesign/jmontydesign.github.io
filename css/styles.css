@@ -18,7 +18,7 @@ h1, h2 {
   font-weight: 400;
 }
 h1 {
-  font-size: 65px;
+  font-size: 60px;
 }
 h2 {
   font-size: 35px;
@@ -149,5 +149,17 @@ p + h3 {
   }
   .profile-img {
     width: 204px;
+  }
+}
+@media (max-width: 600px){
+  h1 {
+    font-size: 34px;
+    color: white;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  nav a {
+    font-size: 12px;
   }
 }

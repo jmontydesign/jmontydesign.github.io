@@ -100,6 +100,12 @@ nav a {
   font-weight: 700;
 }
 
+/* About
+-------------------------*/
+h2 + p {
+  text-align: left;
+}
+
 
 /* Work Experience
 -------------------------*/

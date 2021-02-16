@@ -7,21 +7,24 @@ gray: #939393
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
 }
-h1, h2 {
+h1,
+h2 {
   font-weight: 400;
 }
 h1 {
   font-size: 60px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 32px;
   margin-top: 0;
 }
 h3 {
@@ -52,19 +55,20 @@ a:hover {
   display: inline-block;
 }
 
-
 /* Header and Footer
 -------------------------*/
-header, footer {
+header,
+footer {
   background: #939393;
-  color: #DDD;
+  color: #ddd;
 }
 /* header */
 header {
   padding-top: 50px;
   position: relative;
 }
-header h1, header h2 {
+header h1,
+header h2 {
   margin: 0;
 }
 .download {
@@ -81,7 +85,6 @@ footer {
   padding: 10px;
   display: inline-block;
 }
-
 
 /* Navigation
 -------------------------*/
@@ -106,11 +109,10 @@ h2 + p {
   text-align: left;
 }
 
-
 /* Work Experience
 -------------------------*/
 .work {
-  background: #EDF2F4;
+  background: #edf2f4;
 }
 h3 ~ p {
   margin: 0;
@@ -121,7 +123,6 @@ h3 ~ p {
 .job-description p:first-of-type {
   margin-top: 0;
 }
-
 
 /* Education
 -------------------------*/
@@ -134,7 +135,6 @@ h3 ~ p {
 p + h3 {
   margin-top: 30px;
 }
-
 
 /* Media Queries
 -------------------------*/
@@ -149,7 +149,7 @@ p + h3 {
     padding-left: 20px;
   }
 }
-@media (max-width: 899px){
+@media (max-width: 899px) {
   header {
     text-align: center;
   }
@@ -157,7 +157,7 @@ p + h3 {
     width: 204px;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 600px) {
   h1 {
     font-size: 34px;
     color: white;

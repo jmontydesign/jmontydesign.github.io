@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- // Intro -->
     <header id="about">
-      <a href="jm_resume.pdf" download class="btn download">Download Resume</a>
+      <a href="resume_jm.pdf" download class="btn download">Download Resume</a>
       <nav>
         <a href="#about">About</a>
-        <a href="#work">Work Experience</a>
+        <a href="#work">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -20,18 +19,21 @@
         <img class="profile-img col-narrow" src="images/jm_puz.png" />
         <div class="col-wide">
           <h1>John Montgomery</h1>
-          <h3>Software Architect - Pieces found. Systems built.</h3>
+          <h3 class="my-title">
+            Software Architect - <br class="responsive-break" /><span
+              class="tag-line"
+              >Pieces found. <br class="responsive-break" />Systems built.</span
+            >
+          </h3>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- // Work Experience -->
       <section id="work" class="work">
         <div class="content-wrap">
-          <h2>Work Experience</h2>
+          <h2>Experience</h2>
 
-          <!-- Job 1 Details -->
           <div class="col-narrow">
             <h3>Software Architect</h3>
             <p class="uppercase">Roo Veterinary Inc</p>
@@ -39,40 +41,59 @@
           </div>
 
           <div class="col-wide job-description">
-            <p>
-              Architected and spearheaded the separation of our marketing
-              website from the web portion of our cross-platform product,
-              leveraging Cloudflare and AWS Cloud ALB design to empower
-              marketing teams with enhanced control over the timing of marketing
-              updates. Implemented deployment automation using GitHub Actions
-              integrated with Terraform to ensure seamless, zero-downtime FE and
-              BE dockerized server deployments. Instituted an automated nightly
-              process for securely cloning, scrubbing, and regenerating mock
-              data, ensuring our test environment consistently possesses
-              up-to-date, production-quality data. Additionally, I broke out
-              backend customer payment functionality into microservices
-              utilizing AWS Batch for batch processing tasks and AWS Lambdas for
-              event-driven operations, optimizing scalability and
-              maintainability of our system architecture.
-            </p>
+            <ul>
+              <li>
+                Directed platform architecture and contributed to engineering
+                leadership for a high-scale SaaS product, ensuring rapid feature
+                delivery alongside long-term scalability, security, and
+                maintainability.
+              </li>
+              <li>
+                Designed and implemented cloud-based architectures (AWS,
+                Cloudflare, ALB) to separate marketing and product web systems,
+                enabling independent deployment cycles.
+              </li>
+              <li>
+                Built deployment automation pipelines using GitHub Actions +
+                Terraform for zero-downtime frontend (React) and backend
+                (Node.js, Python microservices) Docker deployments.
+              </li>
+              <li>
+                Developed backend microservices with AWS Lambda, AWS Batch, and
+                MySQL, processing millions of data records for scheduling and
+                payment operations.
+              </li>
+              <li>
+                Created automated test data refresh pipelines with secure
+                scrubbing, keeping dev/staging environments synchronized with
+                production-scale datasets.
+              </li>
+            </ul>
           </div>
 
-          <!-- Job 2 Details -->
           <div class="col-narrow">
             <h3>Senior Full Stack Engineer</h3>
             <p class="uppercase">Healthcare Scheduling</p>
-            <p>2017 - 2019</p>
+            <p>2017 - 2018</p>
           </div>
 
           <div class="col-wide job-description">
-            <p>
-              Lead engineer and platform architect for office management SaaS
-              product for optometry offices using AWS, Docker, NodeJS, Express,
-              Redis, Postgresql, ReactJS, Redux and HTML/CSS.
-            </p>
+            <ul>
+              <li>
+                Sole full-stack developer for an early-stage startup building an
+                office management and scheduling platform for medical practices.
+              </li>
+              <li>
+                Designed and implemented backend and frontend features using
+                AWS, Node.js, PostgreSQL, Redis, React, Redux.
+              </li>
+              <li>
+                Developed core scheduling, user management, and reporting
+                features, and optimized data queries for scalability.
+              </li>
+            </ul>
           </div>
 
-          <!-- Job 3 Details -->
           <div class="col-narrow">
             <h3>Full Stack Engineer</h3>
             <p class="uppercase">Reverse Risk</p>
@@ -80,17 +101,20 @@
           </div>
 
           <div class="col-wide job-description">
-            <p>
-              Collaborated with a small team of engineers and car dealership
-              executives to build a SaaS data analytics and reporting product
-              for Car Dealerships that was profitable, growing fast in sales and
-              purchased by the privately held Reynolds and Reynolds. The
-              technologies I worked with included AWS Elastic Beanstalk, nodeJS,
-              Express, MSSQL, and Redis.
-            </p>
+            <ul>
+              <li>
+                Built with a small team a SaaS data analytics and reporting
+                platform for car dealerships, leveraging AWS Elastic Beanstalk,
+                Node.js, MSSQL, Redis.
+              </li>
+              <li>
+                Optimized analytics pipelines for high-volume transactional
+                data, contributing to product acquisition by Reynolds &
+                Reynolds.
+              </li>
+            </ul>
           </div>
 
-          <!-- Job 4 Details -->
           <div class="col-narrow">
             <h3>Lead Prototype Designer</h3>
             <p class="uppercase">Scientific Learning</p>
@@ -98,56 +122,142 @@
           </div>
 
           <div class="col-wide job-description">
-            <p>
-              Collaborated with cross functional teams to design gamified
-              adaptive learning software for language learning impaired children
-              in the k-12 education market. I was both the lead UI/UX designer
-              and lead functional design prototyper, coding fully functional
-              game interactions for internal review and user testing. The
-              learning software was used by over 1 million children.
-            </p>
+            <ul>
+              <li>
+                Designed and coded fully functional game interactions for user
+                testing, product demonstrations, and internal evaluation.
+              </li>
+              <li>
+                Developed UI/UX for data reporting tools that visualized student
+                performance metrics for educators, enabling more informed
+                instructional decisions.
+              </li>
+              <li>
+                Worked closely with educators, engineers, and product teams to
+                align engaging visual design with instructional objectives.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="work">
-        <div class="content-wrap">
-          <h2>Skills</h2>
+        <div class="content-wrap short-top">
+          <h2>Additional Experience <br />& Community Involvement</h2>
+          <div class="col-narrow">
+            <h3>
+              Temporary Teaching Assignment
+              <!-- <span class="dim">(Emergency Credential)</span> -->
+            </h3>
+            <p class="uppercase">Oakland Unified School District</p>
+            <p>2024 - 2025</p>
+          </div>
+
+          <div class="col-wide job-description">
+            <ul>
+              <li>
+                Designed and delivered engaging lessons across multiple
+                subjects, integrating technology and AI tools to personalize
+                learning and create custom instructional materials.
+              </li>
+              <li>
+                Leveraged AI-driven content generation to adapt lesson plans for
+                varied student proficiency levels, improving accessibility and
+                engagement.
+              </li>
+              <li>
+                Applied software engineering mindset to streamline grading, data
+                tracking, and reporting using custom-built spreadsheets and
+                automated workflows.
+              </li>
+            </ul>
+          </div>
+          <div class="col-narrow">
+            <h3>Youth Soccer Coach</h3>
+            <p>2020 - 2025</p>
+          </div>
+
+          <div class="col-wide job-description">
+            <ul>
+              <li>
+                Celebrating teamwork, good sportsmanship and love of the
+                beautiful game.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="content-wrap short-top">
+          <h2>Core Skills</h2>
+          <h3>Languages</h3>
+          <p>JavaScript, TypeScript, Python, SQL, HTML/CSS</p>
+          <br />
+          <h3>Frontend</h3>
+          <p>React, Redux, Responsive UI/UX, Data Visualization</p>
+          <br />
+          <h3>Backend</h3>
           <p>
-            SaaS Platform Design, Database Architecture Design, AWS, Google
-            Cloud Platform, Project Management, Jira, Confluence, API
-            integrations with Stripe, Dwolla, Twilio, Firebase Cloud Messaging,
-            Github, Slack, Hubspot, Docker, Redis, NodeJS, Express, NextJS,
-            MySQL, PostgreSQL, ReactJS, Redux, Typescript, Javascript, HTML/CSS
+            Node.js, Python (Flask), Express, REST APIs, Microservices
+            Architecture
+          </p>
+          <br />
+          <h3>Databases</h3>
+          <p>MySQL, MSSQL, PostgreSQL, Redis</p>
+          <br />
+          <h3>Cloud & DevOps</h3>
+          <p>
+            AWS (Lambda, Batch, ALB, S3, EC2), Cloudflare, Docker, Terraform,
+            CI/CD Pipelines
+          </p>
+          <br />
+          <h3>Data Handling</h3>
+          <p>
+            Large-scale datasets, Query Optimization, Secure Data Pipelines,
+            Test Data Automation
+          </p>
+          <br />
+          <h3>Other</h3>
+          <p>
+            GIS familiarity, Data Security, Permissions Management, Agile/Scrum
           </p>
         </div>
       </section>
 
-      <!-- // Education -->
       <section id="education" class="education">
         <div class="content-wrap">
-          <h2>Education</h2>
+          <div class="col-narrow">
+            <h2>Education</h2>
 
-          <h3>University of Washington</h3>
-          <p>BFA Printmaking/Design</p>
+            <h3>Stanford University</h3>
+            <p>BA Latin American History</p>
 
-          <h3>Stanford University</h3>
-          <p>BA Latin American History</p>
-          <br />
-          <br />
-          <h2>Languages</h2>
-          <h3>Spanish</h3>
+            <h3>University of Washington</h3>
+            <p>BFA Printmaking/Design</p>
+          </div>
+          <div class="col-wide responsive-left-padding">
+            <div class="responsive-top-padding">
+              <h2>Certificates</h2>
+              <p>Udemy PMP Course Certificate</p>
+            </div>
+            <div>
+              <h2>Additional Languages</h2>
+              <p>Spanish</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- // Footer & contact info -->
     <footer id="contact">
       <div class="content-wrap">
-        <h2>Let's Solve it!</h2>
+        <h2 class="light">Let's solve it!</h2>
 
         <div class="contact-info">
-          <a href="mailto:jmontydesign@gmail.com">jmontydesign@gmail.com</a>
+          <a class="light" href="mailto:jmontydesign@gmail.com"
+            >jmontydesign@gmail.com</a
+          >
         </div>
 
         <p>&#169; 2025 by John Montgomery</p>

@@ -21,14 +21,21 @@ h2 {
   font-weight: 400;
 }
 h1 {
+  padding-top: 10px;
   font-size: 60px;
 }
 h2 {
   font-size: 32px;
   margin-top: 0;
+  color: #0a7aad
 }
 h3 {
   margin: 0;
+}
+ul, li{
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 a {
   color: lightblue;
@@ -41,6 +48,15 @@ a:hover {
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
+}
+.dim {
+  color: #888;
+}
+.light{
+  color: white;
+}
+.short-top {
+  padding-top: 0px;
 }
 .uppercase {
   text-transform: uppercase;
@@ -75,6 +91,9 @@ header h2 {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.tag-line {
+  color: white;
 }
 
 /* footer */
@@ -148,24 +167,53 @@ p + h3 {
     float: left;
     padding-left: 20px;
   }
+  .responsive-break {
+    display: none;
+  }
+  .responsive-left-padding{
+    padding-left: 100px;
+  }
 }
 @media (max-width: 899px) {
   header {
     text-align: center;
   }
+  ul{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px
+    
+  }
   .profile-img {
     width: 204px;
+  }
+  .responsive-break {
+    display: none;
+  }
+  .responsive-top-padding{
+    padding-top: 28px;
   }
 }
 @media (max-width: 600px) {
   h1 {
     font-size: 34px;
-    color: white;
   }
   h2 {
     font-size: 28px;
   }
   nav a {
     font-size: 12px;
+  }
+  .responsive-break {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .responsive-break {
+    display: block;
+  }
+  h3.my-title {
+    padding-top: 4px;
+    line-height: 1.6;
   }
 }
